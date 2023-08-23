@@ -1,5 +1,6 @@
 @import "./styles/variables";
 @import "./styles/mixins";
+@import "./styles/header";
 
 *,
 *::before,
@@ -36,7 +37,6 @@ a {
     transition: 300ms all ease-in;
   }
 }
-
 
 a {
   &:hover,

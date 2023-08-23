@@ -1,17 +1,13 @@
-import './app.scss'
-import logo from './assets/webisle-logo.svg';
+import React from 'react';
+import './app.scss'; // Importing the SCSS file
+import Header from './components/Header';
 
 function App() {
-
-
   return (
-    <>
-      <div className="hello">
-        <h1>Hello</h1>
-        <img src={logo} alt="My Image" />
-      </div>
-    </>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
