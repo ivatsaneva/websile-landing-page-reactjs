@@ -1,0 +1,43 @@
+// Colors
+$primaryColor: #007bff;
+$secondaryColor: #6c757d;
+$accentColor: #ff9900;
+
+// Fonts
+$defaultFontFamily: 'Helvetica Neue', sans-serif;
+$headingFontFamily: 'Roboto', sans-serif;
+$font-weight: ("regular": 400, "medium": 500, "bold": 700);
+
+// Font Sizes
+$fontSizeSmall: 14px;
+$fontSizeMedium: 16px;
+$fontSizeLarge: 18px;
+
+// Spacing
+$spacingSmall: 8px;
+$spacingMedium: 16px;
+$spacingLarge: 24px;
+
+// Breakpoints
+$breakpoints: (
+    sm: (
+        min: 576px,
+        max: 575.98px,
+    ),
+    md: (
+        min: 768px,
+        max: 767.98px
+    ),
+    lg: (
+        min: 992px,
+        max: 991.98px
+    ),
+    xl: (
+        min: 1200px,
+        max: 1199.98px
+    ),
+    xxl: (
+      min: 1400px,
+      max: 1399.98px,
+    )
+);

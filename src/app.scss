@@ -1,0 +1,25 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+.hello {
+  background: red;
+}
+
+h1 {
+  font-weight: map-get($font-weight, "bold");
+  font-size: $fontSizeLarge;
+}
+
+button {
+  width: 200px;
+  background: blue;
+
+  @include breakpoint(md, max) {
+    width: 100%;
+    background: red;
+  }
+
+
+}
+
+
