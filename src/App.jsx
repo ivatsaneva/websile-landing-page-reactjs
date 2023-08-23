@@ -1,4 +1,5 @@
 import './app.scss'
+import logo from './assets/webisle-logo.svg';
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
     <>
       <div className="hello">
         <h1>Hello</h1>
-        <button>test btn</button>
+        <img src={logo} alt="My Image" />
       </div>
     </>
   )

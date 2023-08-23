@@ -4,9 +4,12 @@ $secondaryColor: #6c757d;
 $accentColor: #ff9900;
 
 // Fonts
-$defaultFontFamily: 'Helvetica Neue', sans-serif;
-$headingFontFamily: 'Roboto', sans-serif;
-$font-weight: ("regular": 400, "medium": 500, "bold": 700);
+$defaultFontFamily: 'Inter', sans-serif;
+$font-weight: ("light": 300, "regular": 400, "medium": 500, "semibold": 600);
+$font-size-base: 16px; // Base font size in pixels
+$font-size-small: 0.875rem; // 14px
+$font-size-medium: 1rem;   // 16px
+$font-size-large: 1.25rem;  // 20px
 
 // Font Sizes
 $fontSizeSmall: 14px;
