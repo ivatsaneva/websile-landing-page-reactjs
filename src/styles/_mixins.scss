@@ -38,6 +38,9 @@
     font-size: calc($value / 16) + rem;
 }
 
-@mixin line-height($value, $font-size) {
-    line-height: calc($value / $font-size);
-}
+
+@mixin line-height($font-size, $line-height-multiplier) {
+    $line-height: calc($font-size * $line-height-multiplier);
+    line-height: calc($line-height / $font-size);
+  }
+  

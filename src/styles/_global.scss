@@ -2,10 +2,9 @@
 *::before,
 *::after {
   box-sizing: unset;
-  
   margin: 0;
   padding: 0;
-  user-select: none;
+
 }
 
 .wrapper {
@@ -15,17 +14,23 @@
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-size: $font-size-base;
-  line-height: 2.4rem;
+  font-size: 16px;
+  font-weight: map-get($font-weight, "regular");
   letter-spacing: 0;
   color: #000;
   background: $whiteColor;
   font-family: $defaultFontFamily;
-  font-weight: map-get($font-weight, "regular");
+
 }
 
+
 a {
+  cursor: pointer;
   &:visited,
   &:focus {
     outline: none;
@@ -36,10 +41,15 @@ a {
 }
 
 a {
-  &:hover,
+  
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
   &:focus,
   &:active {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   img {
@@ -61,8 +71,12 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
+h1, h2, h3, h4, p {
+  font-weight: map-get($font-weight, "regular");
+}
 
 // button {
 //   width: 200px;

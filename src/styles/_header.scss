@@ -1,87 +1,116 @@
 #header {
-    background: $blackColor;
-    width: 100%;
-    padding: 20px 0;
-    border-bzz
+  background: $blackColor;
+  width: 100%;
 
-    .logo {
-        img{
-            max-width: 170px;
-            display: block;
-        }
+  border-bottom: 1px solid rgba(164, 164, 164, 0.13);
+
+  img {
+    max-width: 170px;
+  }
+
+  
+
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  a {
+    @include font-size(15);
+    @include line-height(15, 1.5);
+    color: $whiteColor;
+    font-weight: map-get($font-weight, "regular");
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: $whiteColor;
+      width: 0;
+      height: 1.8px;
+      bottom: -3px;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      border-radius: 50;
     }
 
+    &:hover::after {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+    }
+  }
 
-    .header-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .demo-btn {
+    width: 105px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: $blueColor;
+    border-radius: 30px;
+    color: $whiteColor;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
 
+    padding-left: 14px;
+    transition-duration: 0.5s;
+
+    .svgIcon {
+      height: 22px;
+      transition-duration: 1.5s;
+
+      path {
+        fill: rgb(255, 255, 255);
+      }
     }
 
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+    &:hover {
+      background-color: $whiteColor;
+      transition-duration: 0.5s;
+      color: $blackColor;
 
-        
+      .svgIcon path {
+        fill: rgb(0, 0, 0);
+      }
     }
 
-    a {
-        @include font-size(15);
-        @include line-height(1.5, 15); 
-        color: $whiteColor;
-        font-weight: map-get($font-weight, "regular");
-        text-decoration: none;
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            background: $whiteColor;
-            width: 0;
-            height: 1.8px;
-            bottom: -3px;
-            left: 0;
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.3s ease-in-out;
-            border-radius: 50;
-        }
-    
-        &:hover::after {
-            visibility: visible;
-            opacity: 1;
-            width: 100%;
-        }
-
-        
+    &:active {
+      transform: scale(0.97);
+      transition-duration: 0.2s;
     }
 
-    .demo-btn {
-        background: $blueColor;
-        box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.25) ;
-        padding: 20px 25px;
-        border-radius: 64px;
-        box-sizing: border-box;
-        display: inline-block;
-
+    &:hover .svgIcon {
+      transform: rotate(250deg);
+      transition-duration: 1.5s;
     }
-    
-    .demo-btn::after {
-        display: none;
+  }
 
-    }
-    .demo-btn:hover::after {
-        display: none;
+  .demo-btn::after {
+    display: none;
+  }
 
-    }
-
-   
-    
+  
+  .demo-btn:hover::after {
+    display: none;
+  }
 }
 
-.nav-mobile{
-    display: none;
+.nav-mobile {
+  display: none;
 }
