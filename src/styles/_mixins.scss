@@ -1,5 +1,4 @@
 @mixin breakpoint($breakpoint, $direction: min) {
-    
 
     @if map-has-key($breakpoints, $breakpoint) { 
         $breakpoint-values: map-get($breakpoints, $breakpoint);
@@ -33,4 +32,12 @@
             }
         }
     }
+}
+
+@mixin font-size($value) {
+    font-size: calc($value / 16) + rem;
+}
+
+@mixin line-height($value, $font-size) {
+    line-height: calc($value / $font-size);
 }

@@ -1,14 +1,12 @@
 import React from 'react';
 import './app.scss'; // Importing the SCSS file
-import Header from './components/Header';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
-
-    
+    </>
   );
 }
 

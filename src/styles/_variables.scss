@@ -1,20 +1,14 @@
 // Colors
-$primaryColor: #007bff;
-$secondaryColor: #6c757d;
-$accentColor: #ff9900;
+$blueColor: #5B6CFF;
+$grayText: #BCBCBC;
+$whiteColor: #FFFFFF;
+$blackColor: #000000;
+
 
 // Fonts
 $defaultFontFamily: 'Inter', sans-serif;
 $font-weight: ("light": 300, "regular": 400, "medium": 500, "semibold": 600);
-$font-size-base: 16px; // Base font size in pixels
-$font-size-small: 0.875rem; // 14px
-$font-size-medium: 1rem;   // 16px
-$font-size-large: 1.25rem;  // 20px
-
-// Font Sizes
-$fontSizeSmall: 14px;
-$fontSizeMedium: 16px;
-$fontSizeLarge: 18px;
+$font-size-base: 16px; 
 
 // Spacing
 $spacingSmall: 8px;

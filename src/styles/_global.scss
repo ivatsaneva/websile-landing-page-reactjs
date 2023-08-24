@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: unset;
+  
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 7%;
+  
+}
+
+body {
+  font-size: $font-size-base;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+  color: #000;
+  background: $whiteColor;
+  font-family: $defaultFontFamily;
+  font-weight: map-get($font-weight, "regular");
+}
+
+a {
+  &:visited,
+  &:focus {
+    outline: none;
+    color: $blackColor;
+    text-decoration: none;
+    transition: 300ms all ease-in;
+  }
+}
+
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+
+  img {
+    border: 0 none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+// button {
+//   width: 200px;
+//   background: blue;
+
+//   @include breakpoint(md, max) {
+//     width: 100%;
+//     background: red;
+//   }
+
+// }
